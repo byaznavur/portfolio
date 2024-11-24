@@ -5,6 +5,7 @@ import Layout from "./components/layout";
 import NotFound from "./pages/notfound";
 import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
+import About from "./pages/about";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           {" "}
           <Route path="" element={<Home />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="about" element={<About />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Route>
