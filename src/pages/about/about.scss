@@ -6,7 +6,7 @@
   background-attachment: fixed;
   background-size: cover;
   /* background-position: center; */
-  height: 100vh;
+  min-height: 100vh;
 
   .aboutme {
     background-color: #000;
@@ -88,6 +88,28 @@
           }
         }
       }
+    }
+  }
+
+  .skills {
+    margin-top: 50px;
+    padding: 30px;
+    h2 {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 40px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 30px;
     }
   }
 }

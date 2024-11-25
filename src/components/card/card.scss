@@ -1,0 +1,28 @@
+.card {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  // Box shadow styling
+  box-shadow: 0 4px 8px rgba(97, 218, 251, 0.2),
+    0 6px 20px rgba(97, 218, 251, 0.1);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(97, 218, 251, 0.3),
+      0 8px 24px rgba(97, 218, 251, 0.2);
+  }
+
+  p {
+    background-color: #0dbb2a;
+    padding: 4px;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

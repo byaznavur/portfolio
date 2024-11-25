@@ -1,29 +1,34 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/home";
-import Projects from "./pages/projects";
+import Loading from "./components/shares/index";
 import Layout from "./components/layout";
-import NotFound from "./pages/notfound";
-import Login from "./pages/auth/login";
-import Register from "./pages/auth/register";
-import About from "./pages/about";
+import { lazy, Suspense } from "react";
+const Home = lazy(() => import("./pages/home"));
+const Projects = lazy(() => import("./pages/projects"));
+const NotFound = lazy(() => import("./pages/notfound"));
+const Login = lazy(() => import("./pages/auth/login"));
+const Register = lazy(() => import("./pages/auth/register"));
+const About = lazy(() => import("./pages/about"));
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          {" "}
-          <Route path="" element={<Home />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="about" element={<About />} />
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-        </Route>
-        <Route path="*" element={<NotFound />} />
+    <Suspense fallback={<Loading />}>
+      {" "}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            {" "}
+            <Route path="" element={<Home />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="about" element={<About />} />
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
 
-        <Route />
-      </Routes>
-    </BrowserRouter>
+          <Route />
+        </Routes>
+      </BrowserRouter>
+    </Suspense>
   );
 };
 

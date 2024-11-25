@@ -1,7 +1,8 @@
-import { Fragment } from "react";
+import { FaGithub, FaLinkedin, FaTelegram, FaYoutube } from "react-icons/fa6";
 import photoMe from "../../assets/about-image/image.png";
 import "./about.scss";
-import { FaGithub, FaLinkedin, FaTelegram, FaYoutube } from "react-icons/fa6";
+import { skills } from "../../data";
+import Card from "../../components/card/card";
 const About = () => {
   return (
     <div className="container about">
@@ -53,7 +54,13 @@ const About = () => {
         </div>
       </section>
       <section className="skills">
-        <h2>Skills</h2>
+        <h2>My Skills</h2>
+
+        <div className="cards">
+          {skills.map((el, i) => (
+            <Card key={i} {...el} />
+          ))}
+        </div>
       </section>
       <section className="projects">
         <h2>Projects</h2>
