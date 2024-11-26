@@ -39,4 +39,8 @@ export const skills = [
     name: "NODE JS",
     isLearn: false,
   },
+  {
+    name: "GIT/GIT HUB",
+    isLearn: true,
+  },
 ];

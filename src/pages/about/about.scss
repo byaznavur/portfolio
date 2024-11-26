@@ -112,4 +112,88 @@
       margin-top: 30px;
     }
   }
+
+  .projects {
+    background: #000;
+    padding: 30px;
+    margin: 30px 0;
+    color: #fff;
+    height: 60vh;
+    text-align: center;
+  }
+
+  .contact {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    background-color: #000;
+    padding: 30px;
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 50%;
+
+      h2 {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 40px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+      p {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 22px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+
+      .call-me {
+        display: flex;
+        gap: 10px;
+
+        .call-card {
+          display: flex;
+          align-items: center;
+          padding: 6px;
+          background-color: #fff;
+          gap: 2px;
+          border-radius: 7px;
+          transition: all 0.7s ease-in-out;
+          svg {
+            font-size: 20px;
+            color: #61dafb;
+          }
+          a {
+            color: #61dafb;
+            font-weight: bold;
+          }
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    .location {
+      width: 90%;
+
+      iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+      }
+    }
+  }
 }

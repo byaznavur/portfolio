@@ -1,8 +1,16 @@
-import { FaGithub, FaLinkedin, FaTelegram, FaYoutube } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaPhone,
+  FaTelegram,
+  FaYoutube,
+} from "react-icons/fa6";
+
 import photoMe from "../../assets/about-image/image.png";
 import "./about.scss";
 import { skills } from "../../data";
 import Card from "../../components/card/card";
+
 const About = () => {
   return (
     <div className="container about">
@@ -66,7 +74,39 @@ const About = () => {
         <h2>Projects</h2>
       </section>
       <section className="contact">
-        <h2>Contact</h2>
+        <div className="contact-info">
+          {" "}
+          <h2>Contact Me</h2>
+          <p>
+            We’d love to hear from you! Whether you have a question about our
+            services or want to collaborate, feel free to reach out.
+          </p>
+          <div className="call-me">
+            <div className="call-card">
+              <FaTelegram />
+              <a
+                href="https://t.me/abdukhakimov"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @abduhakimov
+              </a>
+            </div>
+            <div className="call-card">
+              <FaPhone />
+              <a href="tel:+998996882812">+998 99 688 2812</a>
+            </div>
+          </div>
+        </div>
+        <div className="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47974.471276952914!2d69.3262521!3d41.278301199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef57d146f4803%3A0x72f4619de5ab1ede!2sYashnobod%20District%2C%20Tashkent%2C%20Tashkent%20Region!5e0!3m2!1sen!2s!4v1732605162736!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            loading="lazy"
+          />
+        </div>
       </section>
     </div>
   );
