@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import Logo from "../../logo";
 import "./header.scss";
 const Header = () => {
@@ -8,7 +10,9 @@ const Header = () => {
         <div className="logo">
           <Logo />
         </div>
-
+        <div className="burgerBtn">
+          <GiHamburgerMenu />
+        </div>
         <ul>
           <li>
             <NavLink to="/">Home</NavLink>
