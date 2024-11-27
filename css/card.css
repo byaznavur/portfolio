@@ -1,0 +1,38 @@
+.card {
+  background-color: #fff;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -webkit-box-shadow: 0 4px 8px rgba(97, 218, 251, 0.2), 0 6px 20px rgba(97, 218, 251, 0.1);
+          box-shadow: 0 4px 8px rgba(97, 218, 251, 0.2), 0 6px 20px rgba(97, 218, 251, 0.1);
+}
+.card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 6px 12px rgba(97, 218, 251, 0.3), 0 8px 24px rgba(97, 218, 251, 0.2);
+          box-shadow: 0 6px 12px rgba(97, 218, 251, 0.3), 0 8px 24px rgba(97, 218, 251, 0.2);
+}
+.card p {
+  background-color: #0dbb2a;
+  padding: 4px;
+  border-radius: 4px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}/*# sourceMappingURL=card.css.map */

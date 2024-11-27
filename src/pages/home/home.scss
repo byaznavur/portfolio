@@ -4,8 +4,11 @@
   width: 100%;
   background-size: cover;
   // background-position: center;
-  height: 75vh;
+  min-height: 75vh;
   margin-top: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 
   .herro-wrapper {
     display: flex;
@@ -14,7 +17,6 @@
     flex-direction: column;
     gap: 10px;
     width: 50%;
-    height: 100%;
 
     h1 {
       color: #fff;

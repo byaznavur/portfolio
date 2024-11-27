@@ -19,6 +19,11 @@ header {
         a {
           color: #61dafb;
         }
+
+        .active {
+          border-bottom: 2px solid #61dafb;
+          padding-bottom: 3px;
+        }
       }
     }
   }
@@ -52,6 +57,21 @@ header {
             color: #61dafb;
           }
         }
+      }
+      .show {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        height: 100vh;
+        border: 2px solid #fff;
+        padding: 20px;
+        border-radius: 10px;
       }
     }
   }
