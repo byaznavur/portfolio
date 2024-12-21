@@ -7,9 +7,12 @@ import {
 } from "react-icons/fa6";
 
 import photoMe from "../../assets/about-image/image.png";
+
 import "./about.scss";
 import { skills } from "../../data";
 import Card from "../../components/card/card";
+import { projectData } from "../../data/project-data";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -72,6 +75,33 @@ const About = () => {
       </section>
       <section className="projects">
         <h2>Projects</h2>
+
+        <div className="project-cards">
+          {projectData.slice(0, 3).map((el) => (
+            <div key={el.id} className="project-card">
+              <img src={el.img} alt="" />
+              <h3>
+                <span>{el.id}</span>.{el.title}
+              </h3>
+              <div className="project-link">
+                <a href={el.link}>Project Link</a>
+                <a href={el.github}>Git Hub </a>
+              </div>
+
+              <div className="topics">
+                {el.topics.map((topic) => (
+                  <a key={topic} href="#">
+                    #{topic}
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <Link className="allProjectBtn" to="/projects">
+          All Projects
+        </Link>
       </section>
       <section className="contact">
         <div className="contact-info">

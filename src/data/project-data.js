@@ -7,6 +7,7 @@ import img6 from "../assets/project-image/gemini.png";
 import img7 from "../assets/project-image/noiceland.png";
 import img8 from "../assets/project-image/e-commerce.png";
 import img9 from "../assets/project-image/crud.png";
+import img10 from "../assets/project-image/cardmon.png";
 export const projectData = [
   {
     id: 1,
@@ -60,7 +61,7 @@ export const projectData = [
     id: 7,
     img: img7,
     link: "https://test-first-project.vercel.app/",
-    title: "Gemini Clone",
+    title: "NOICELAND",
     github: "https://github.com/byaznavur/NOICELAND",
     topics: ["CSS", "REACTJS", "RESPONSIVE", "DYNAMIC"],
   },
@@ -79,5 +80,13 @@ export const projectData = [
     title: "CRUD APP",
     github: "https://github.com/byaznavur/CRUD",
     topics: ["HTML", "BOOTSTRAP", "JAVASCRIPT", "RESPONSIVE", "DYNAMIC"],
+  },
+  {
+    id: 10,
+    img: img10,
+    link: "https://cardmon-test.vercel.app/",
+    title: "CARDMON",
+    github: "https://github.com/byaznavur/CARDMON",
+    topics: ["BOOTSTRAP", "REACT JS"],
   },
 ];
