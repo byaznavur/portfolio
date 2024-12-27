@@ -17,7 +17,7 @@ const Projects = () => {
               <a href={el.link}>Project Link</a>
               <a href={el.github}>Git Hub </a>
             </div>
-
+            <p className="desc">{el.desc ? el.desc : ""}</p>
             <div className="topics">
               {el.topics.map((topic) => (
                 <a key={topic} href="#">

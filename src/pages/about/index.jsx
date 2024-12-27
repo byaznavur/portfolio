@@ -99,7 +99,7 @@ const About = () => {
           ))}
         </div>
 
-        <Link className="allProjectBtn" to="/projects">
+        <Link target="_blank" className="allProjectBtn" to="/projects">
           All Projects
         </Link>
       </section>
