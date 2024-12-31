@@ -10,6 +10,7 @@ import img9 from "../assets/project-image/crud.png";
 import img10 from "../assets/project-image/cardmon.png";
 import img11 from "../assets/project-image/weather.png";
 import img12 from "../assets/project-image/quiz-app.png";
+import img13 from "../assets/project-image/counties.png.png";
 export const projectData = [
   {
     id: 1,
@@ -102,10 +103,19 @@ export const projectData = [
   {
     id: 12,
     img: img12,
-    link: "https://weather-test-sigma.vercel.app/",
+    link: "https://quiz-app-blue-mu.vercel.app/",
     title: "QUIZ APP",
     desc: "Quiz app freeCodeCamp.org on you tube using the channel",
     github: "https://github.com/byaznavur/QUIZ-APP",
     topics: ["TYPESCRIPT", "REACT JS", "API"],
+  },
+  {
+    id: 13,
+    img: img13,
+    link: "https://countries-test-wheat.vercel.app/",
+    title: "COUNTRIES",
+    desc: "",
+    github: "https://github.com/byaznavur/COUNTRIES",
+    topics: ["HTML", "SCSS", "JAVASCRIPT", "API"],
   },
 ];
