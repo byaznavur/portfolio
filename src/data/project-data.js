@@ -10,7 +10,7 @@ import img9 from "../assets/project-image/crud.png";
 import img10 from "../assets/project-image/cardmon.png";
 import img11 from "../assets/project-image/weather.png";
 import img12 from "../assets/project-image/quiz-app.png";
-import img13 from "../assets/project-image/counties.png.png";
+import img13 from "../assets/project-image/counties.png";
 export const projectData = [
   {
     id: 1,
