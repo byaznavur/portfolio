@@ -12,6 +12,7 @@ import img11 from "../assets/project-image/weather.png";
 import img12 from "../assets/project-image/quiz-app.png";
 import img13 from "../assets/project-image/counties.png";
 import img14 from "../assets/project-image/contact.png";
+import img15 from "../assets/project-image/crm.png";
 export const projectData = [
   {
     id: 1,
@@ -126,6 +127,15 @@ export const projectData = [
     title: "CONTACT APP",
     desc: "",
     github: "https://github.com/byaznavur/CONTACT-APP",
+    topics: ["BOOTSRAP", "REACT JS"],
+  },
+  {
+    id: 15,
+    img: img15,
+    link: "https://edu-crm-test.vercel.app",
+    title: "EDU-CRM",
+    desc: "",
+    github: "https://github.com/byaznavur/EDU-CRM",
     topics: ["BOOTSRAP", "REACT JS"],
   },
 ];
