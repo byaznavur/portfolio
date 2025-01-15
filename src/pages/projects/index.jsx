@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { projectData } from "../../data/project-data";
 import "./projects.scss";
 // import Projects from "./index";
@@ -9,7 +10,14 @@ const Projects = () => {
       <div className="project-cards">
         {projectData.map((el) => (
           <div key={el.id} className="project-card">
-            <img src={el.img} alt="" />
+            <LazyLoadImage
+              effect="blur"
+              wrapperProps={{
+                style: { transitionDelay: "1s" },
+              }}
+              src={el.img}
+              alt=""
+            />
             <h3>
               <span>{el.id}</span>.{el.title}
             </h3>

@@ -13,6 +13,7 @@ import { skills } from "../../data";
 import Card from "../../components/card/card";
 import { projectData } from "../../data/project-data";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const About = () => {
   return (
@@ -21,7 +22,14 @@ const About = () => {
         <h2>Learn more about me</h2>
         <div className="about-info">
           <div className="about-image">
-            <img src={photoMe} alt="" />
+            <LazyLoadImage
+              effect="blur"
+              wrapperProps={{
+                style: { transitionDelay: "1s" },
+              }}
+              src={photoMe}
+              alt=""
+            />
           </div>
           <div className="about-text">
             <h3>I'm Junior Front-End developer</h3>
@@ -79,7 +87,14 @@ const About = () => {
         <div className="project-cards">
           {projectData.slice(0, 3).map((el) => (
             <div key={el.id} className="project-card">
-              <img src={el.img} alt="" />
+              <LazyLoadImage
+                effect="blur"
+                wrapperProps={{
+                  style: { transitionDelay: "1s" },
+                }}
+                src={el.img}
+                alt=""
+              />
               <h3>
                 <span>{el.id}</span>.{el.title}
               </h3>
