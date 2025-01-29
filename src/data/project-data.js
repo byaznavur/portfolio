@@ -13,6 +13,8 @@ import img12 from "../assets/project-image/quiz-app.png";
 import img13 from "../assets/project-image/counties.png";
 import img14 from "../assets/project-image/contact.png";
 import img15 from "../assets/project-image/crm.png";
+import img16 from "../assets/project-image/pizza.png";
+import img17 from "../assets/project-image/adminka-edu.png";
 export const projectData = [
   {
     id: 1,
@@ -137,5 +139,23 @@ export const projectData = [
     desc: "",
     github: "https://github.com/byaznavur/EDU-CRM",
     topics: ["BOOTSRAP", "REACT JS"],
+  },
+  {
+    id: 16,
+    img: img16,
+    link: "https://kuda-pizza-text.vercel.app",
+    title: "KUDA-PIZZA",
+    desc: "",
+    github: "https://github.com/byaznavur/KUDA-PIZZA",
+    topics: ["BOOTSRAP", "REACT JS"],
+  },
+  {
+    id: 17,
+    img: img17,
+    link: "https://adminka-edu.vercel.app/",
+    title: "ADMINKA-EDU",
+    desc: "",
+    github: "https://github.com/byaznavur/ADMINKA",
+    topics: ["ANTD", "REACT JS"],
   },
 ];
